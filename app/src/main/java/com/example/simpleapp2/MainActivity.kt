@@ -9,14 +9,20 @@ import android.widget.Toast
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val rollButton : Button = findViewById(R.id.roll_button)
+        diceImage = findViewById(R.id.dice_image)
+
         rollButton.setOnClickListener {
             rollDice()
         }
+
     }
 
     private fun rollDice() {

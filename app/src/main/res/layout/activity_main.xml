@@ -12,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/empty_dice" />
+        android:src="@drawable/empty_dice"
+        android:contentDescription="@string/empty_dice" />
 
     <Button
         android:layout_width="wrap_content"
